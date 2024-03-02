@@ -1,0 +1,168 @@
+.game-card {
+    background-color: black;
+    padding: 2mm;
+    margin: auto;
+    height: 88.9mm;
+    width: 63.5mm;
+    border-radius: 3mm;
+}
+
+.game-card-content {
+    background-color: white;
+    height: 100%;
+    border-radius: 2mm;
+    padding: 2mm;
+}
+
+
+.game-card-title-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.game-card-name {
+    border: 1mm outset black;
+    border-right: none;
+    padding-right: 5mm;
+    height: 9mm;
+    width: 50mm;
+    border-top-left-radius: 2mm;
+    background-color: white;
+    box-shadow: -1mm 1mm 1mm -1mm gray;
+}
+
+.game-card-attribute,
+.game-card-attribute-picture {
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+}
+
+.game-card-attribute {
+    width: 10mm;
+    height: 10mm;
+    margin-left: -5mm;
+    border: 1mm outset black;
+    background-color: white;
+    box-shadow: 0mm 1mm 2mm -1mm gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-card-attribute-picture {
+    width: 95%;
+    height: 95%;
+    background-image: var(--game-card-attribute-symbol);
+}
+
+.game-card-attribute-picture::after {
+    border: none;
+}
+
+.game-card-faction-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: -1.7mm;
+}
+
+.game-card-faction {
+    border-bottom: 0.5mm inset black;
+    border-image: linear-gradient(to right, transparent 4mm, black 0%, black 45mm, transparent 4mm) 100% 1;
+    background: radial-gradient(ellipse 7mm 8mm at 0mm 4mm, transparent 3.5mm, white 0%) no-repeat;
+    height: 4mm;
+    width: 100%;
+    padding: 0mm 4mm;
+    position: relative;
+    box-shadow: 2mm 1mm 1mm -1mm gray;
+}
+
+.game-card-faction::before {
+    border-right: 0.5mm inset black;
+    border-top-right-radius: 8mm 10mm;
+    width: 3mm;
+    height: 4mm;
+    display: inline-block;
+    content: '';
+    position: relative;
+    margin-left: -4mm;
+    box-shadow: inset -1mm 0mm 1mm -1mm gray;
+}
+
+.game-card-faction::after {
+    border-left: 0.5mm inset black;
+    border-top-left-radius: 8mm 10mm;
+    width: 3mm;
+    height: 4mm;
+    display: inline-block;
+    content: '';
+    position: relative;
+    margin-right: -4mm;
+    box-shadow: inset -1mm 0mm 1mm -1mm gray;
+}
+
+.game-card-super-type {
+    border: 0.5mm inset black;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: -3.5mm;
+    width: 6mm;
+    height: 6mm;
+    box-shadow: 0mm 1mm 2mm -1mm gray;
+}
+
+
+.game-card-picture-box {
+    height: 50mm;
+    margin-top: -5mm;
+    display: flex;
+    justify-content: center;
+}
+
+.game-card-picture {
+    border: 1mm inset black;
+    border-top: none;
+    width: 60mm;
+    border-radius: 10mm / 100mm;
+    background-color: white;
+}
+
+.attribute-select.show {
+    display: flex;
+}
+
+.attribute-select-button {
+    background-repeat: no-repeat;
+    width: 2em;
+    height: 2em;
+}
+
+.attribute-select-button.fire {
+    background-image: var(--game-card-attribute-fire);
+}
+
+.attribute-select-button.water {
+    background-image: var(--game-card-attribute-water);
+}
+
+.attribute-select-button.air {
+    background-image: var(--game-card-attribute-air);
+}
+
+.attribute-select-button.earth {
+    background-image: var(--game-card-attribute-earth);
+}
+
+.attribute-select-button.void {
+    background-image: var(--game-card-attribute-void);
+}

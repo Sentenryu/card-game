@@ -1,0 +1,13 @@
+.editor{
+    display: grid;
+    grid-template-columns: [menu] 20em [content] 1fr;
+}
+
+.tools-menu{
+    grid-column: menu;
+}
+
+.content-area{
+    grid-column: content;
+    padding: 1em;
+}

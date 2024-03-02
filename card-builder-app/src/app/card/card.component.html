@@ -1,0 +1,24 @@
+<div class="game-card game-card-{{cardData.attribute}}" >
+    <div class="game-card-content">
+        <div class="game-card-title-bar">
+            <div class="game-card-name"></div>
+            <div class="game-card-attribute" ngbDropdown placement="right">
+                <div class="game-card-attribute-picture" ngbDropdownToggle></div>
+                <div ngbDropdownMenu class="attribute-select">
+                    <button ngbDropdownItem *ngFor="let attribute of cardAttributes" class="attribute-select-button {{attribute}}" (click)="setAttribute(attribute)">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="game-card-faction-bar">
+            <div class="game-card-faction"></div>
+        </div>
+        <div class="game-card-picture-box">
+            <div class="game-card-picture"></div>
+        </div>
+        <div class="game-card-type-bar">
+            
+            <div class="game-card-super-type"></div>
+        </div>
+    </div>
+</div>

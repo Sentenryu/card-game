@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+
+:root {
+    --game-card-attribute-fire: url(./assets/images/flamer.svg);
+    --game-card-attribute-water: url(./assets/images/drop.svg);
+    --game-card-attribute-air: url(./assets/images/fluffy-trefoil.svg);
+    --game-card-attribute-earth: url(./assets/images/rock.svg);
+}
+
+.game-card-fire {
+    --game-card-attribute-symbol: var(--game-card-attribute-fire);
+}
+
+.game-card-water {
+    --game-card-attribute-symbol: var(--game-card-attribute-water);
+}
+
+.game-card-air {
+    --game-card-attribute-symbol: var(--game-card-attribute-air);
+}
+
+.game-card-earth {
+    --game-card-attribute-symbol: var(--game-card-attribute-earth);
+}
